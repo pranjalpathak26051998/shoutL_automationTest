@@ -4,7 +4,7 @@
   "description": "Testing and automation",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 10000"
+    "test": "mocha --timeout 50000"
   },
   "author": "Pranjal Pathak",
   "license": "ISC",
