@@ -1,0 +1,195 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-09-06T12:26:56.050Z",
+    "end": "2024-09-06T12:27:07.278Z",
+    "duration": 11228,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "adf0ba05-48bd-4191-9e1c-a22342fad57b",
+      "title": "",
+      "fullFile": "D:\\shoutL\\shoutLTest\\test\\devLogin.js",
+      "file": "\\test\\devLogin.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0fc3e267-a3a5-4b10-bfec-7f7f711120aa",
+          "title": "ShoutL Login Unit Testing",
+          "fullFile": "D:\\shoutL\\shoutLTest\\test\\devLogin.js",
+          "file": "\\test\\devLogin.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"ShoutL Login Unit Testing\"",
+              "fullTitle": "ShoutL Login Unit Testing \"before all\" hook in \"ShoutL Login Unit Testing\"",
+              "timedOut": false,
+              "duration": 1315,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser(Browser.CHROME).build();\nconsole.log(\"Driver accessed successfully\");",
+              "err": {},
+              "uuid": "e4e8023a-c1aa-40a2-bd9b-661af4a9291f",
+              "parentUUID": "0fc3e267-a3a5-4b10-bfec-7f7f711120aa",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"ShoutL Login Unit Testing\"",
+              "fullTitle": "ShoutL Login Unit Testing \"after all\" hook in \"ShoutL Login Unit Testing\"",
+              "timedOut": false,
+              "duration": 43,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();\nconsole.log(\"Closed webDriver instance...\");",
+              "err": {},
+              "uuid": "c7194827-c2db-47a7-a44d-48a8f6edb93e",
+              "parentUUID": "0fc3e267-a3a5-4b10-bfec-7f7f711120aa",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Load the shoutL website",
+              "fullTitle": "ShoutL Login Unit Testing Load the shoutL website",
+              "timedOut": false,
+              "duration": 573,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//dev server\nawait driver.get(website_url);\nconsole.log(`Website fetched successfully`);",
+              "err": {},
+              "uuid": "1fadbd26-d511-466d-94a4-42d24be6115d",
+              "parentUUID": "0fc3e267-a3a5-4b10-bfec-7f7f711120aa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Enter the email ",
+              "fullTitle": "ShoutL Login Unit Testing Enter the email ",
+              "timedOut": false,
+              "duration": 2166,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let dev_email = process.env.dev_email;\nawait driver.findElement(By.id('email')).sendKeys(dev_email);\nawait driver.sleep(2000);\nconsole.log(\"entered email successfully\");",
+              "err": {},
+              "uuid": "9795d010-c468-460c-b0d0-a683ee40382d",
+              "parentUUID": "0fc3e267-a3a5-4b10-bfec-7f7f711120aa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Enter the password ",
+              "fullTitle": "ShoutL Login Unit Testing Enter the password ",
+              "timedOut": false,
+              "duration": 2048,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let dev_password = process.env.dev_password;\nawait driver.findElement(By.id('password')).sendKeys(dev_password);\nawait driver.sleep(2000);\nconsole.log(\"entered the password successfully \");",
+              "err": {},
+              "uuid": "8d53ebbf-6cc4-43cf-b99d-899d0b3fb3a4",
+              "parentUUID": "0fc3e267-a3a5-4b10-bfec-7f7f711120aa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "clicking on the sign in button",
+              "fullTitle": "ShoutL Login Unit Testing clicking on the sign in button",
+              "timedOut": false,
+              "duration": 5074,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//finding the signin button and clicking it\n    await driver.findElement(By.xpath(\"//button[@type='submit']\")).click();\n    await driver.sleep(5000);\n    console.log(\"Successfully signed in\")",
+              "err": {},
+              "uuid": "f85a3dec-72fe-497a-acb1-8b7d4e5c9b04",
+              "parentUUID": "0fc3e267-a3a5-4b10-bfec-7f7f711120aa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1fadbd26-d511-466d-94a4-42d24be6115d",
+            "9795d010-c468-460c-b0d0-a683ee40382d",
+            "8d53ebbf-6cc4-43cf-b99d-899d0b3fb3a4",
+            "f85a3dec-72fe-497a-acb1-8b7d4e5c9b04"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9861,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 50000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.7.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
