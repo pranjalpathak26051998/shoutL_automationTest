@@ -1,0 +1,16 @@
+{
+  "name": "shoutltest",
+  "version": "1.0.0",
+  "description": "Testing and automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 10000"
+  },
+  "author": "Pranjal Pathak",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mocha": "^10.7.3",
+    "selenium-webdriver": "^4.21.0"
+  }
+}
